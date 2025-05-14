@@ -1,4 +1,4 @@
 Cara Update codingan ke github :
 git add .
-git commit -m "Deskripsi Update"
+git commit -m "Update"
 git push
