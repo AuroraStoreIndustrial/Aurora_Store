@@ -1,0 +1,112 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.Label_Aurora {
+  position: relative;
+  bottom: 3vh;
+  padding-bottom: 2vh;
+  width: 10vw;
+  height: 2vw;
+}
+
+/* container nav */
+nav {
+  position: relative;
+  bottom: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 40rem;
+}
+
+/* text nav */
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #787878;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 90%;
+  height: 4px;
+  background-color: #0E64AA;
+  border-radius: 999px;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #3086e2;
+  font-weight: 600;
+}
+
+nav a:hover::after {
+  width: 90%;
+  background-color: #3086e2;
+  transform: translateX(-50%) scaleX(1.2);
+}
+
+nav a.active {
+  color: #0E64AA;
+  font-weight: 600;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: #0E64AA;
+  border-radius: 100px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.Download_Icon {
+  width: 1.1vw;
+}
+
+.Download_Manual_Book_Button {
+  position: relative;
+  bottom: 4vh;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 13vw;
+  height: 3vw;
+  background: linear-gradient(to right, #4991DF, #4684B5);
+  margin-left: auto;
+  border-radius: 100px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Download_Manual_Book_Button:hover {
+  background: linear-gradient(to right, #3086e2, #327fba);
+  transform: scale(0.95);
+}
+
+.Text_Manual_Book {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding-right: 0.5vw;
+}
