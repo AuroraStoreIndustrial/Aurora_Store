@@ -60,10 +60,10 @@
 }
 
 .popup-content img.close-icon {
-    position: relative;
-    right: -13vw;
-    cursor: pointer;
-    transition: filter 0.3s ease;
+  position: relative;
+  right: -13vw;
+  cursor: pointer;
+  transition: filter 0.3s ease;
 }
 
 .modal_Content {
@@ -108,13 +108,45 @@
 }
 
 .button_download {
-  background-color: #a90101;
+  position: relative;
   width: 100%;
   height: 6vh;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button_download::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #8C8C8C, #656565);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.button_download::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #70A4CE, #3084CA);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.button_download:hover::after {
+  opacity: 1;
 }
 
 .Teks_Download_Selected_Files {
   font-size: 1.5vw;
   color: white;
   font-weight: 200;
+  z-index: 5;
 }
