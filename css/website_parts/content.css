@@ -1,0 +1,144 @@
+.content_box {
+  position: relative;
+  bottom: 2vh;
+  width: 90vw;
+  height: 40vw;
+  background: linear-gradient(to right, #89F7FE, #66A6FF);
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Pattern {
+  position: absolute;
+  left: 20vw;
+  height: 83vh;
+}
+
+.Text_Aurora {
+  font-size: 3vw;
+  font-weight: 400;
+  color: #0A2540;
+}
+
+.Text_Industrial {
+  font-size: 2.4vw;
+  color: #0A2540;
+  font-weight: 600;
+}
+
+.Text_Tough {
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #2A2A2A;
+}
+
+.Label_Name_Product {
+  position: absolute;
+  bottom: 36vh;
+  padding: 3vh 3vh 5vh 7vh;
+  background-color: #FFFFFF;
+  width: 29vw;
+  height: 17vh;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.RXT_7900P {
+  position: relative;
+  left: 47vw;
+  top: 20vh;
+  width: 20vw;
+  height: 15vw;
+}
+
+.paper {
+  position: absolute;
+  padding: 3vh 1vh 5vh 7vh;
+  bottom: 36vh;
+  left: 86.1vw;
+  height: 17vh;
+  background: #FFFFFF;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Button_Contact_Us {
+  position: relative;
+  top: 22vh;
+  left: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  height: 4vh;
+  background-color: #FFFFFF;
+  border: 1px solid #003A8C;
+  border-radius: 100px;
+  color: #003A8C;
+  font-weight: 600;
+  font-size: 1vw;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Button_Contact_Us:hover {
+  background-color: #34587B;
+  color: #FFFFFF;
+  transform: scale(0.95);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 5vh;
+  width: 2.5vw;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  border: 2px solid #34587B;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right:hover {
+  background-color: #34587B;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 5vh;
+  width: 2.5vw;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  border: 2px solid #34587B;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left:hover {
+  background-color: #34587B;
+}
+
+.Arrow_Right,
+.Arrow_Left {
+  width: 50%;
+}
+
+.wrap1 {
+  display: flex;
+  gap: 2.1vw;
+  position: relative;
+  top: 32vh;
+  left: 3.2vw;
+}
+
+.left:hover .Arrow_Left,
+.right:hover .Arrow_Right {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
