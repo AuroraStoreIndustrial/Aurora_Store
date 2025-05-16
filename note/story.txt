@@ -22,3 +22,5 @@ Walau agak kacau dari segi struktur, ini masih bagian dari proses belajar saya,
 jadi gak masalah.
 
 Note (5/15/2025)
+mungkin karena aku yang masih belom tahu cara nya jadi ada kiamat file karena aku
+gak tahu gimana cara nya Github bisa membaca file di dalam sebuah folder.
