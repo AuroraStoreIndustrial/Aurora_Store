@@ -44,7 +44,7 @@ closePopupButton.addEventListener('click', () => {
 });
 
 closePopupButton.addEventListener('mouseenter', () => {
-    closePopupButton.src = "Cross_Red.svg";
+    closePopupButton.src = "cross_red.svg";
 });
 
 closePopupButton.addEventListener('mouseleave', () => {
