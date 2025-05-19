@@ -2,19 +2,17 @@
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   padding: 20px 30px;
   user-select: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-header {
-  display: flex;
-  margin-top: 2vw;
+  font-family: "Alexandria", sans-serif;
 }
 
 p {

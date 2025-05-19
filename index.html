@@ -7,7 +7,6 @@
     <!-- ^New Tab Browser Settings -->
     <link rel="Icon" type="image/png" href="aurora logo.png">
     <!-- ^calling css --> <!--  -->
-    <link rel="stylesheet" href="arrangement.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="responsive.css">
@@ -36,19 +35,78 @@
                 <div class="wrap_capital_title">
                     <img src="file_icon.svg" alt="File_Icon" class="File_Icon" draggable="false">
                     <p class="modal_title">List of guidebooks</p>
-                    <img id="closePopup" src="cross_gray.svg" alt="Close" class="close-icon"
-                        draggable="false">
+                    <img id="closePopup" src="cross_gray.svg" alt="Close" class="close-icon" draggable="false">
                 </div>
                 <div class="line1"></div>
                 <div class="modal_Content">
-                    <div class="box_list1"></div>
-                    <div class="box_list2"></div>
-                    <div class="box_list3"></div>
-                    <div class="box_list4"></div>
-                    <div class="box_list5"></div>
-                    <div class="button_download">
-                        <p>Download Selected Files</p>
+                    <div class="box_list0">
+                        <input type="checkbox" id="check_all" />
+                        <p>All</p>
                     </div>
+                    <div class="box_list1">
+                        <input type="checkbox" class="check_item" />
+                        <p>RXT-7900P.pdf</p>
+                        <div class="size_pdf">
+                            <p>750 KB</p>
+                        </div>
+                        <a href="aurora_industrial_PC_RXT-7900P.pdf" download>
+                            <section class="download_pdf">
+                                <img src="download_icon.svg" alt="download_icon">
+                            </section>
+                        </a>
+                    </div>
+                    <div class="box_list2">
+                        <input type="checkbox" class="check_item" />
+                        <p>EX3-RDX Datasheet.pdf</p>
+                        <div class="size_pdf">
+                            <p>960 KB</p>
+                        </div>
+                        <a href="aurora-ultrasonic-ex3-rdx-datasheet-1.pdf" download>
+                            <section class="download_pdf">
+                                <img src="download_icon.svg" alt="download_icon">
+                            </section>
+                        </a>
+                    </div>
+                    <div class="box_list3">
+                        <input type="checkbox" class="check_item" />
+                        <p>BLIIoT IO Manual v3.1.pdf</p>
+                        <div class="size_pdf">
+                            <p>2.12 MB</p>
+                        </div>
+                        <a href="bliiot-m-series-ethernet-io-module-user-manual-v3-1.pdf" download>
+                            <section class="download_pdf">
+                                <img src="download_icon.svg" alt="download_icon">
+                            </section>
+                        </a>
+                    </div>
+                    <div class="box_list4">
+                        <input type="checkbox" class="check_item" />
+                        <p>ITX-15R Datasheet.pdf</p>
+                        <div class="size_pdf">
+                            <p>520 KB</p>
+                        </div>
+                        <a href="datasheet-aurora-industrial-pc-itx-15r.pdf" download>
+                            <section class="download_pdf">
+                                <img src="download_icon.svg" alt="download_icon">
+                            </section>
+                        </a>
+                    </div>
+                    <div class="box_list5">
+                        <input type="checkbox" class="check_item" />
+                        <p>RXT-4200P Datasheet.pdf</p>
+                        <div class="size_pdf">
+                            <p>790 KB</p>
+                        </div>
+                        <a href="datasheet-industrial-pc-rxt-4200p.pdf" download>
+                            <section class="download_pdf">
+                                <img src="download_icon.svg" alt="download_icon">
+                            </section>
+                        </a>
+                    </div>
+                    <button id="download_selected" class="button_download inactive" disabled>
+                        <p>Download Selected Files</p>
+                        <img src="download_icon.svg" alt="download_icon">
+                    </button>
                 </div>
             </div>
         </div>
@@ -56,25 +114,80 @@
         <div class="content_box">
             <img src="pattern.svg" alt="Pattern" class="Pattern" draggable="false">
             <section id="PRODUCT" class="content active">
-                <div class="Label_Name_Product">
-                    <p class="Text_Aurora">AURORA</p>
-                    <p class="Text_Industrial">INDUSTRIAL PC ITX-15R</p>
-                    <p class="Text_Tough">Tough, Smart, And Fanless.</p>
+                <div class="Label_Name_Product"></div>
+
+                <div class="pack_of_choice">
+                    <div class="choice_product1"><img src="rxt-7900p2.png" alt="ULTRASONIC" draggable="false"></div>
+                    <div class="choice_product2"><img src="ultrasonic_sensor.png" alt="ULTRASONIC" draggable="false">
+                    </div>
+                    <div class="choice_product3"><img src="Industrial RXT-7900P.png" alt="RXT-7900P" draggable="false">
+                    </div>
+                    <div class="choice_product4"><img src="INDUSTRIAL BLIIoT IO.png" alt="BLIIoT" draggable="false">
+                    </div>
+                    <div class="choice_product5"><img src="Industrial PC ITX-15R.png" alt="ITX-15R" draggable="false">
+                    </div>
                 </div>
-                <img src="rxt-7900p.png" alt="RXT_7900P" class="RXT_7900P" draggable="false">
-                <div class="paper"></div>
+
+                <section class="product_content" id="product1_content">
+                    <img src="rxt-7900p.png" alt="RXT_7900P" class="RXT_7900P" draggable="false">
+                    <div class="Label_Name_Product">
+                        <p class="Text_Aurora">AURORA</p>
+                        <p class="Text_Industrial">INDUSTRIAL PC ITX-15R</p>
+                        <p class="Text_Tough">Tough, Smart, And Fanless.</p>
+                    </div>
+                </section>
+
+                <section class="product_content" id="product2_content" style="display:none;">
+                    <img src="product2.png" alt="product_2" class="product_2" draggable="false">
+                    <div class="Label_Name_Product">
+                        <p class="Text_Aurora">AURORA</p>
+                        <p class="Text_Industrial">ULTRASONIC SENSOR</p>
+                        <p class="Text_Tough">Read. Resist. And Repeat.</p>
+                    </div>
+                </section>
+
+                <section class="product_content" id="product3_content" style="display:none;">
+                    <img src="product_3.png" alt="product_3" class="product_3" draggable="false">
+                    <div class="Label_Name_Product">
+                        <p class="Text_Aurora">AURORA</p>
+                        <p class="text_2">INDUSTRIAL RXT-7900P</p>
+                        <p class="Text_Tough">No Fan. No Noise. And No Problem.</p>
+                    </div>
+                </section>
+
+                <section class="product_content" id="product4_content" style="display:none;">
+                    <img src="product_4.png" alt="product_4" class="product_4" draggable="false">
+                    <div class="Label_Name_Product">
+                        <p class="Text_Aurora">AURORA</p>
+                        <p class="text_2">INDUSTRIAL BLIIOT IO</p>
+                        <p class="Text_Tough">Connect Fast. And Control Smart.</p>
+                    </div>
+                </section>
+
+                <section class="product_content" id="product5_content" style="display:none;">
+                    <img src="product_5.png" alt="product_5" class="product_5" draggable="false">
+                    <div class="Label_Name_Product">
+                        <p class="Text_Aurora">AURORA</p>
+                        <p class="text_2">PC RXT-4200P</p>
+                        <p class="Text_Tough">Compact. Fanless. Fearless.</p>
+                    </div>
+                </section>
+
                 <section class="Button_Contact_Us">
                     <p>Contact Us</p>
                 </section>
-                <div class="wrap1">
+
+                <div class="wrap_arrow">
                     <section class="left">
                         <img src="arrow_left.svg" alt="Arrow_Left" class="Arrow_Left" draggable="false">
                     </section>
                     <section class="right">
-                        <img src="arrow_right.svg" alt="Arrow_Right" class="Arrow_Right"
-                            draggable="false">
+                        <img src="arrow_right.svg" alt="Arrow_Right" class="Arrow_Right" draggable="false">
                     </section>
                 </div>
+            </section>
+
+            <div class="paper"></div>
             </section>
             <section id="SPECIFICATIONS" class="content">
                 <!-- content goes here -->

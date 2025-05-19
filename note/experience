@@ -1,0 +1,20 @@
+saat coding usahakan menggunakan huruf kecil semua
+mengganti spasi dengan underscore atau bisa juga minus
+agar file mudah di baca oleh github
+
+kalo gak mau ribet sama eror mending jangan taro file di
+dalam folder yang tidak di hubungkan ke github, ntar
+github gak bisa baca soal nya
+
+posision absolute itu untuk object,
+
+sementara relative itu untuk induk object,
+
+dan fixed itu gak peduli sama induk nya cocok buat navbar,
+element hitam modal,tombol "scroll to top",dan lainya
+
+sticky itu gabungan relative dan fixed cocok buat element
+yang nempel walau di scroll tapi tetap dalam batasan induk
+nya cocok buat object kayak thead jadi judul table nya tetap
+di tempat walau di scroll tapi tidak melewati batas dari
+induknya

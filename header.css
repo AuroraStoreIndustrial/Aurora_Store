@@ -1,29 +1,28 @@
 header {
+  position: relative;
   display: flex;
+  top: 1.5vh;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 2rem;
   gap: 1rem;
+  width: 90vw;
+  height: 8vh;
 }
 
 .Label_Aurora {
-  position: relative;
-  bottom: 3vh;
-  padding-bottom: 2vh;
+  position: absolute;
   width: 10vw;
   height: 2vw;
+  margin-top: -0.5vh;
 }
 
-/* container nav */
 nav {
-  position: relative;
+  position: absolute;
   bottom: 4vh;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 0;
+  margin-left: 55vw;
   padding: 0;
-  margin-left: 40rem;
 }
 
 /* text nav */
@@ -37,12 +36,12 @@ nav a {
 }
 
 nav a::after {
-  content: "";
   position: absolute;
-  top: 170%;
-  left: 50%;
+  content: "";
   transform: translateX(-50%) scaleX(0);
-  width: 90%;
+  width: 92%;
+  top: 150%;
+  left: 50%;
   height: 4px;
   background-color: #0E64AA;
   border-radius: 999px;
@@ -55,7 +54,10 @@ nav a:hover {
 }
 
 nav a:hover::after {
-  width: 90%;
+  position: absolute;
+  width: 92%;
+  top: 150%;
+  left: 50%;
   background-color: #3086e2;
   transform: translateX(-50%) scaleX(1.2);
 }
@@ -66,25 +68,21 @@ nav a.active {
 }
 
 nav a.active::after {
-  content: "";
   position: absolute;
-  top: 170%;
+  top: 150%;
   left: 50%;
+  content: "";
   transform: translateX(-50%);
-  width: 90%;
+  width: 92%;
   background-color: #0E64AA;
   border-radius: 100px;
   transition: width 0.3s ease, background-color 0.3s ease;
   transform: translateX(-50%) scaleX(1);
 }
 
-.Download_Icon {
-  width: 1.1vw;
-}
-
 .Download_Manual_Book_Button {
-  position: relative;
-  bottom: 4vh;
+  position: absolute;
+  left: 77vw;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -92,7 +90,6 @@ nav a.active::after {
   width: 13vw;
   height: 3vw;
   background: linear-gradient(to right, #4991DF, #4684B5);
-  margin-left: auto;
   border-radius: 100px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -109,4 +106,9 @@ nav a.active::after {
   font-size: 17px;
   font-weight: 500;
   padding-right: 0.5vw;
+}
+
+.Download_Icon,
+.Text_Manual_Book {
+  margin-top: -0.5vh;
 }
