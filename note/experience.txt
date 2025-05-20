@@ -1,3 +1,7 @@
+<!-- FIXME > Red - Perbaiki-->
+<!-- TODO > Yellow - Rencana-->
+<!-- OPTIMIZE > Blue - Optimalkan-->
+
 saat coding usahakan menggunakan huruf kecil semua
 mengganti spasi dengan underscore atau bisa juga minus
 agar file mudah di baca oleh github

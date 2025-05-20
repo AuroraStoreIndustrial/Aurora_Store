@@ -1,0 +1,5 @@
+list of remaining work :
+- efek hover pada tombol daftar product
+- isi Specifications & Dimensions
+- animasi product
+- responsive website

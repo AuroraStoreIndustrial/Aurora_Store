@@ -1,2 +1,2 @@
-Terminal :
-CTRL + `
+CTRL + ` = Terminal
+Win + v = List copy

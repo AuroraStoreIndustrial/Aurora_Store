@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ^New Tab Browser Settings -->
     <link rel="Icon" type="image/png" href="aurora logo.png">
-    <!-- ^calling css --> <!--  -->
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+
 
 <body>
     <header>
@@ -26,6 +24,7 @@
         </section>
 
     </header>
+
     <main>
         <div id="popup" class="popup hidden">
             <div class="popup-content">
@@ -112,6 +111,7 @@
             <img src="pattern.svg" alt="Pattern" class="Pattern" draggable="false">
             <section id="PRODUCT" class="content active">
                 <div class="Label_Name_Product"></div>
+                <div class="paper"></div>
 
                 <div class="pack_of_choice">
                     <div class="choice_product1"><img src="rxt-7900p2.png" alt="ULTRASONIC" draggable="false"></div>
@@ -126,7 +126,8 @@
                 </div>
 
                 <section class="product_content" id="product1_content">
-                    <img src="rxt-7900p.png" alt="RXT_7900P" class="RXT_7900P" draggable="false">
+                    <img src="product_1.png" alt="product_1" class="product_1" draggable="false">
+                    <img src="shadow.svg" alt="shadow" class="shadow0" draggable="false">
                     <div class="Label_Name_Product">
                         <p class="Text_Aurora">AURORA</p>
                         <p class="Text_Industrial">INDUSTRIAL PC ITX-15R</p>
@@ -135,7 +136,8 @@
                 </section>
 
                 <section class="product_content" id="product2_content" style="display:none;">
-                    <img src="product2.png" alt="product_2" class="product_2" draggable="false">
+                    <img src="product_2.png" alt="product_2" class="product_2" draggable="false">
+                    <img src="shadow.svg" alt="shadow" class="shadow1" draggable="false">
                     <div class="Label_Name_Product">
                         <p class="Text_Aurora">AURORA</p>
                         <p class="Text_Industrial">ULTRASONIC SENSOR</p>
@@ -145,6 +147,7 @@
 
                 <section class="product_content" id="product3_content" style="display:none;">
                     <img src="product_3.png" alt="product_3" class="product_3" draggable="false">
+                    <img src="shadow.svg" alt="shadow" class="shadow2" draggable="false">
                     <div class="Label_Name_Product">
                         <p class="Text_Aurora">AURORA</p>
                         <p class="text_2">INDUSTRIAL RXT-7900P</p>
@@ -154,6 +157,7 @@
 
                 <section class="product_content" id="product4_content" style="display:none;">
                     <img src="product_4.png" alt="product_4" class="product_4" draggable="false">
+                    <img src="shadow.svg" alt="shadow" class="shadow3" draggable="false">
                     <div class="Label_Name_Product">
                         <p class="Text_Aurora">AURORA</p>
                         <p class="text_2">INDUSTRIAL BLIIOT IO</p>
@@ -163,6 +167,7 @@
 
                 <section class="product_content" id="product5_content" style="display:none;">
                     <img src="product_5.png" alt="product_5" class="product_5" draggable="false">
+                    <img src="shadow.svg" alt="shadow" class="shadow4" dramn ggable="false">
                     <div class="Label_Name_Product">
                         <p class="Text_Aurora">AURORA</p>
                         <p class="text_2">PC RXT-4200P</p>
@@ -170,9 +175,40 @@
                     </div>
                 </section>
 
+                <!-- todo Contact Us -->
                 <section class="Button_Contact_Us">
                     <p>Contact Us</p>
                 </section>
+                <!-- OPTIMIZE Contact Us Modal -->
+                <div id="contact_modal" class="popup hidden">
+                    <div class="popup_content1">
+                        <div class="wrap_capital_title">
+                            <img src="icon_data.svg" alt="icon_data" class="icon_data" draggable="false">
+                            <p class="modal_title">Orderer Data</p>
+                            <img id="closeContact" src="cross_gray.svg" alt="Close" class="close-icon"
+                                draggable="false">
+                        </div>
+
+                        <div class="line1"></div>
+                        <div class="modal_Content2">
+                            <section class="wrap_input1">
+                                <p class="text_gray_and_start">Name<span class="text_red">*</span></p>
+                                <input type="name" id="name" name="name" placeholder="Your name">
+                            </section>
+
+                            <section class="wrap_input2">
+                                <p class="text_gray_and_start">Email<span class="text_red">*</span></p>
+                                <input type="email" id="email" name="email" placeholder="Your email">
+                            </section>
+
+                            <button type="button" class="send_button inactive" id="sendBtn" disabled>
+                                <span>Send</span>
+                                <img src="paper_plane.svg" alt="paper_plane">
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
 
                 <div class="wrap_arrow">
                     <section class="left">
@@ -184,14 +220,51 @@
                 </div>
             </section>
 
-            <div class="paper"></div>
             </section>
-            <section id="SPECIFICATIONS" class="content">
-                <!-- content goes here -->
+
+
+
+            <section id="SPECIFICATIONS" class="specifications">
+                <div class="specifications_content" id="specifications1_content">
+                    <p>Product 1 specs here</p>
+                </div>
+                <div class="specifications_content" id="specifications2_content" style="display:none;">
+                    <p>Product 2 specs here</p>
+                </div>
+                <div class="specifications_content" id="specifications3_content" style="display:none;">
+                    <p>Product 3 specs here</p>
+                </div>
+                <div class="specifications_content" id="specifications4_content" style="display:none;">
+                    <p>Product 4 specs here</p>
+                </div>
+                <div class="specifications_content" id="specifications5_content" style="display:none;">
+                    <p>Product 5 specs here</p>
+                </div>
             </section>
-            <section id="DIMENSIONS" class="content">
-                <!-- content goes here -->
+
+
+
+            <section id="DIMENSIONS" class="dimensions">
+                <di class="dimensions_content" id="dimensions1_content">
+                    <div class="unit">
+                        <p>UNIT : MM</p>
+                    </div>
+                        <img src="dimensions1.svg" alt="dimensions1" class="dimensions1" draggable="false">
+                </div>
+                <div class="dimensions_content" id="dimensions2_content" style="display:none;">
+                    <img src="dimensions2.svg" alt="dimensions2" class="dimensions1" draggable="false">
+                </div>
+                <div class="dimensions_content" id="dimensions3_content" style="display:none;">
+                    <img src="dimensions3.svg" alt="dimensions3" class="dimensions1" draggable="false">
+                </div>
+                <div class="dimensions_content" id="dimensions4_content" style="display:none;">
+                    <img src="dimensions4.svg" alt="dimensions4" class="dimensions1" draggable="false">
+                </div>
+                <div class="dimensions_content" id="dimensions5_content" style="display:none;">
+                    <img src="dimensions5.svg" alt="dimensions5" class="dimensions1" draggable="false">
+                </div>
             </section>
+
         </div>
     </main>
 </body>
