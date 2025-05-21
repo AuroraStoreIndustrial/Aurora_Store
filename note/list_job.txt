@@ -1,5 +1,25 @@
 list of remaining work :
 - efek hover pada tombol daftar product
 - isi Specifications & Dimensions
-- animasi product
+- animasi product ✅
+- animasi perpindahan product ✅
+- animasi bayangan ✅
+- animasi label nama product ✅
 - responsive website
+- img RXT_7900P salah, buat ke yang benar
+- buat tombol arrow keyborad berfungsi ✅
+- repair design download PDF ✅
+=================================================================
+- cari kesalahan codingan tampilan yang ✅ //FIXME Darurat!
+  membuat nav product dan nav lainya
+  menjadi 2 display lalu perbaiki
+
+  Bug telah di temukan :
+  Jadi product 1 ke nav dimension aman,
+  product 2 sampai 5 ke nav dimension itu bug.
+
+  Bug telah di perbaiki :
+  ternyata di file html ada tag div yang kurang
+  huruf v jadi nya di
+=================================================================
+- perbaiki penamaan link di server online github ✅

@@ -150,13 +150,13 @@ showProductAt(0);
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     //OPTIMIZE File list mapping (nama file di modal : path file PDF)
     const fileMap = {
         "RXT-7900P.pdf": "aurora_industrial_PC_RXT-7900P.pdf",
         "EX3-RDX Datasheet.pdf": "aurora-ultrasonic-ex3-rdx-datasheet-1.pdf",
-        "BLIIoT IO Manual v3.1.pdf": "bliiot-m-series-ethernet-io-module-user-manual-v3-1.pdf", 
-        "ITX-15R Datasheet.pdf": "datasheet-aurora-industrial-pc-itx-15r.pdf",         
+        "BLIIoT IO Manual v3.1.pdf": "bliiot-m-series-ethernet-io-module-user-manual-v3-1.pdf",
+        "ITX-15R Datasheet.pdf": "datasheet-aurora-industrial-pc-itx-15r.pdf",
         "RXT-4200P Datasheet.pdf": "datasheet-industrial-pc-rxt-4200p.pdf"
     };
 
@@ -177,14 +177,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     //OPTIMIZE Check all logic
-    checkAll.addEventListener('change', function() {
+    checkAll.addEventListener('change', function () {
         checkItems.forEach(cb => cb.checked = checkAll.checked);
         updateDownloadBtn();
     });
 
     //OPTIMIZE Individual checkbox logic
     checkItems.forEach(cb => {
-        cb.addEventListener('change', function() {
+        cb.addEventListener('change', function () {
             //OPTIMIZE If any unchecked, uncheck "all"
             if (!cb.checked) checkAll.checked = false;
             //OPTIMIZE If all checked, check "all"
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //OPTIMIZE Download logic
-    downloadBtn.addEventListener('click', function() {
+    downloadBtn.addEventListener('click', function () {
         checkItems.forEach((cb, idx) => {
             if (cb.checked) {
                 const fileName = cb.parentElement.querySelector('p').textContent.trim();
@@ -264,12 +264,12 @@ nameInput.addEventListener('input', updateSendBtn);
 emailInput.addEventListener('input', updateSendBtn);
 
 // Optional: prevent form submit if not valid
-sendBtn.addEventListener('click', function() {
+sendBtn.addEventListener('click', function () {
     if (sendBtn.disabled) return;
     // See below for email sending
 });
 
-sendBtn.addEventListener('click', function() {
+sendBtn.addEventListener('click', function () {
     if (sendBtn.disabled) return;
     const name = nameInput.value.trim();
     const email = emailInput.value.trim();
@@ -310,7 +310,7 @@ function updateSendBtn() {
 nameInput.addEventListener('input', updateSendBtn);
 emailInput.addEventListener('input', updateSendBtn);
 
-sendBtn.addEventListener('click', function(e) {
+sendBtn.addEventListener('click', function (e) {
     if (sendBtn.disabled) return;
     const name = nameInput.value.trim();
     const email = emailInput.value.trim();
@@ -322,4 +322,32 @@ sendBtn.addEventListener('click', function(e) {
         return;
     }
     window.location.href = `mailto:fronggmr@gmail.com?subject=${subject}&body=${body}`;
+});
+
+//todo arrow keyboard
+document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && (e.key === "ArrowLeft" || e.key === "ArrowRight")) {
+        e.preventDefault();
+        const navLinksArr = Array.from(navLinks);
+        let activeIdx = navLinksArr.findIndex((link) =>
+            link.classList.contains("active")
+        );
+        if (activeIdx === -1) return;
+        let nextIdx;
+        if (e.key === "ArrowLeft") {
+            nextIdx = (activeIdx - 1 + navLinksArr.length) % navLinksArr.length;
+        } else {
+            nextIdx = (activeIdx + 1) % navLinksArr.length;
+        }
+        navLinksArr[nextIdx].click();
+        navLinksArr[nextIdx].focus();
+    } else if (e.key === "ArrowLeft") {
+        let idx = currentProductIndex - 1;
+        if (idx < 0) idx = productContents.length - 1;
+        showProductAt(idx);
+    } else if (e.key === "ArrowRight") {
+        let idx = currentProductIndex + 1;
+        if (idx >= productContents.length) idx = 0;
+        showProductAt(idx);
+    }
 });
