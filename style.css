@@ -15,7 +15,7 @@ header {
   margin-top: -0.5vh;
 }
 
-/*//todo > nav */
+/*//yellow > nav                                                                                                                                                */
 nav {
   position: absolute;
   display: flex;
@@ -80,6 +80,7 @@ nav a.active::after {
   transition: width 0.3s ease, background-color 0.3s ease;
   transform: translateX(-50%) scaleX(1);
 }
+
 /*//todo isi konten specifications*/
 .specifications_content {
   position: relative;
@@ -99,17 +100,45 @@ nav a.active::after {
   color: #19222A;
 }
 
-/* //todo Download button*/
+.specification_box {
+  position: relative;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  top: 14vh;
+  left: 3vw;
+  width: 78vw;
+  height: 56vh;
+  border-radius: 10px;
+  gap: 1vw;
+}
+
+.color_blue {
+  color: #0E64AA;
+  font-weight: 500;
+}
+
+.color_gray {
+  color: #5E6469;
+  font-weight: 500;
+}
+
+.specifications_list {
+  position: absolute;
+  width: 100%;
+}
+
+/* //red Download button                                                                                                                    */
+
 .Download_Button {
   position: absolute;
-  margin-top: 12vh;
-  left: 71vw;
+  margin-top: 10vh;
+  left: 74vw;
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 13vw;
-  height: 3vw;
+  width: 10vw;
+  height: 2vw;
   background: linear-gradient(to right, #4991DF, #4684B5);
   border-radius: 18px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
@@ -125,14 +154,13 @@ nav a.active::after {
 
 .Text_DOWNLOAD {
   color: white;
-  font-size: 17px;
+  font-size: 1vw;
   font-weight: 500;
   padding-left: 0.5vw;
 }
 
-.pdf_icon,
-.Text_DOWNLOAD {
-  margin-top: -0.5vh;
+.pdf_icon {
+  width: 1vw;
 }
 
 
@@ -472,7 +500,7 @@ p {
 
 
 
-/* //todo Modal Contact Us */
+/* //yellow                                                                                                               Modal Contact Us */
 .text_red {
   color: red;
 }
@@ -604,7 +632,7 @@ p {
 
 
 
-/* //TODO > Call Font */
+/* //yellow > Call Font                                                                                                                                         */
 @font-face {
   font-family: "Alexandria";
   src: url("alexandria-thin.woff") format("woff"), url("alexandria-thin.woff2") format("woff2");
@@ -678,7 +706,7 @@ p {
 }
 
 
-/*//TODO > Modal Manual Book*/
+/*//yellow > Modal download                                                                                                           */
 
 .popup {
   position: fixed;
@@ -907,7 +935,7 @@ input[type="checkbox"]#check_all:checked::after {
 
 
 
-/* Responsive */
+/*//yellow Responsive                                                                                                                                           */
 /*^ Extra small devices (mobile, 600px and below) */
 @media only screen and (max-width: 600px) {
   /* ... */
@@ -939,18 +967,6 @@ input[type="checkbox"]#check_all:checked::after {
 @media only screen and (min-width: 1200px) {
   /* ... */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .dimensions_content {
   position: relative;
@@ -1000,16 +1016,20 @@ input[type="checkbox"]#check_all:checked::after {
 
 
 
-/*//todo Keyframes for floating animation */
+/*//yellow Keyframes for floating animation                                                                                                                    */
 @keyframes float {
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-10px); /* Naik 10px */
+    transform: translateY(-10px);
+    /* Naik 10px */
   }
+
   100% {
-    transform: translateY(0); /* Kembali ke posisi awal */
+    transform: translateY(0);
+    /* Kembali ke posisi awal */
   }
 }
 
@@ -1019,8 +1039,10 @@ input[type="checkbox"]#check_all:checked::after {
 .product_3,
 .product_4,
 .product_5 {
-  animation: float 3s ease-in-out infinite; /* Animasi naik-turun */
-  transition: transform 0.3s ease; /* Smooth transition */
+  animation: float 3s ease-in-out infinite;
+  /* Animasi naik-turun */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
 }
 
 
@@ -1028,14 +1050,16 @@ input[type="checkbox"]#check_all:checked::after {
 
 
 
-/*//todo Keyframes for shadow animation */
+/*//yellow Keyframes for shadow animation                                                                                                                      */
 @keyframes shadowPulse {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1056,6 +1080,7 @@ input[type="checkbox"]#check_all:checked::after {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1078,6 +1103,7 @@ input[type="checkbox"]#check_all:checked::after {
     opacity: 0;
     transform: translateX(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

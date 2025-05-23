@@ -1,7 +1,7 @@
 > 📝 Schedule  progres 22 mei 2025
 ===============================
 - ⚙ efek hover pada tombol daftar product
-- ⚙ isi Specifications
+- ✅ isi Specifications
 - ⚙ responsive website
 
 Lihat Website nya di sini :
