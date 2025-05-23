@@ -61,7 +61,7 @@ navLinks.forEach(link => {
 });
 
 //TODO Download pop-up
-const downloadButton = document.querySelector('.Download_Manual_Book_Button');
+const downloadButton = document.querySelector('.Download_Button');
 const popup = document.getElementById('popup');
 const closePopupButton = document.getElementById('closePopup');
 
@@ -275,7 +275,7 @@ sendBtn.addEventListener('click', function () {
     const email = emailInput.value.trim();
     const subject = encodeURIComponent("Contact from Aurora Store");
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: I want to order Aurora products`);
-    window.location.href = `mailto:fronggmr@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:aurorastoreindustrial@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // ...existing code...
@@ -321,7 +321,7 @@ sendBtn.addEventListener('click', function (e) {
         emailInput.classList.add('input-error');
         return;
     }
-    window.location.href = `mailto:fronggmr@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:aurorastoreindustrial@gmail.com?subject=${subject}&body=${body}`;
 });
 
 //todo arrow keyboard
