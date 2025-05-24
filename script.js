@@ -147,7 +147,14 @@ rightArrow.addEventListener('click', () => {
 
 //OPTIMIZE Initialize the first product view
 showProductAt(0);
-
+productChoices.forEach((choice) => {
+    choice.addEventListener('click', () => {
+        // Hapus kelas 'active' dari semua elemen
+        productChoices.forEach((c) => c.classList.remove('active'));
+        // Tambahkan kelas 'active' ke elemen yang diklik
+        choice.classList.add('active');
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {
