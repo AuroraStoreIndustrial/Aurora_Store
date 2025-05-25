@@ -163,21 +163,7 @@ nav a.active::after {
   width: 1vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* //TODO Content */
+/* //yellow Content */
 
 /* Hide all main sections by default */
 .content,
@@ -534,16 +520,7 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-/* //yellow                                                                                                               Modal Contact Us */
+/* //yellow Modal Contact Us */
 .text_red {
   color: red;
 }
@@ -667,13 +644,6 @@ p {
   color: #FD7373 !important;
   background-color: #fff0f0;
 }
-
-
-
-
-
-
-
 
 /* //yellow > Call Font                                                                                                                                         */
 @font-face {
@@ -889,11 +859,6 @@ p {
   transform: translateY(2px) scale(0.98);
 }
 
-
-
-
-
-
 input[type="checkbox"].check_item,
 input[type="checkbox"]#check_all {
   appearance: none;
@@ -962,59 +927,6 @@ input[type="checkbox"]#check_all:checked::after {
   transform: translateY(2px) scale(0.98);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*//yellow Responsive                                                                                                                                           */
-/*^ Extra small devices (mobile, 600px and below) */
-@media only screen and (max-width: 600px) {
-  /* ... */
-}
-
-/*^ Small devices (portrait tablets and large phones, 600px and above) */
-@media only screen and (min-width: 600px) {
-  /* ... */
-}
-
-/*^ Medium devices (landscape tablets, 768px and above) */
-@media only screen and (min-width: 768px) {
-  /* ... */
-}
-
-/*^ Large devices (laptop/desktop, 992px and above) */
-@media only screen and (min-width: 992px) {
-  nav a {
-    font-size: 12px;
-  }
-
-  nav a.active::after {
-    bottom: 13px;
-    height: 4px;
-  }
-}
-
-/*^ Extra large devices (large laptops and desktops, 1200px and above) */
-@media only screen and (min-width: 1200px) {
-  .content_box {
-    margin-left: 5vw;
-    width: 100vw;
-    height: 57vw;
-  }
-}
-
 .dimensions_content {
   position: relative;
   top: 5vh;
@@ -1052,17 +964,6 @@ input[type="checkbox"]#check_all:checked::after {
   left: 25vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*//yellow Keyframes for floating animation                                                                                                                    */
 @keyframes float {
   0% {
@@ -1092,11 +993,6 @@ input[type="checkbox"]#check_all:checked::after {
   /* Smooth transition */
 }
 
-
-
-
-
-
 /*//yellow Keyframes for shadow animation                                                                                                                      */
 @keyframes shadowPulse {
   0% {
@@ -1120,7 +1016,6 @@ input[type="checkbox"]#check_all:checked::after {
   animation: shadowPulse 3s ease-in-out infinite;
   transition: transform 0.3s ease;
 }
-
 
 @keyframes fadeSlideIn {
   from {
